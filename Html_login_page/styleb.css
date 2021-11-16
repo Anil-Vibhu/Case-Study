@@ -1,0 +1,50 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+
+background-image: url("hand.png");
+  height: 100%;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg .btn {
+  position: absolute;
+  top: 54%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#E8BEAC ;
+  color: red;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bg .btn:hover {
+  background-color: black;
+}
+.bg .txt {
+  position: absolute;
+  top: 10%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:aqua ;
+  color: black;
+  font-size: 16px;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+}

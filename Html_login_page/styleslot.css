@@ -1,0 +1,25 @@
+
+ .wrapper {
+     width:60%;
+     margin: 0 auto;
+     min-height: 300px
+}
+ .mytimePicker {
+}
+ .saveButton {
+     font-size: 1.3em;
+     letter-spacing: -.06em;
+     font-weight: bold;
+}
+ .saveButton:hover {
+     color: green;
+     font-size: 1.6em;
+     cursor: pointer;
+}
+body {
+/*background-color: aqua;*/
+  background-image: url('/D:/Html_login_page/dpoc2.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position:center;
+}
