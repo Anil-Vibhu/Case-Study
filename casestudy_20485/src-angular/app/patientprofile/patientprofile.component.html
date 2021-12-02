@@ -1,0 +1,26 @@
+<div class="col-md-6" align = "center">
+  <table class="table table-striped">
+  <thead>
+  <tr>
+    <th>patid</th>
+    <th>docid</th>
+    <th>slot id</th>
+    <th>date</th>
+  <th>start-time</th>
+</tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let patientprofile of patientprofile">
+        <td>{{patientprofile.patient.patID}}</td>
+        <td>{{patientprofile.doctor.drID}}</td>
+        <td>{{patientprofile.slotID}}</td>
+        <td>{{patientprofile.date}}</td>
+        <td>{{patientprofile.startTime}}</td>
+        <td><button class ="btn" [routerLink]="['/presc']">Prescription</button></td>
+         
+         
+          </tr>
+  </tbody>
+    </table>
+
+  </div>

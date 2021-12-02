@@ -1,0 +1,116 @@
+
+ 
+.login-page {
+  background-color: chocolate;
+  background-image: url("/assets/Images/dpoc.jpg") ;
+  height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  background-size: cover;
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
+
+}
+.login-page .form .login{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: skyblue;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: white;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: aqua;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: blue;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: black;
+  font-size: 14px;
+}
+.form .message a {
+  color: blue;
+  text-decoration: saddlebrown;
+  font-size: 16px;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+body {
+ background-color: aqua;
+  
+  
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.2rem;
+  margin-top: 0.5rem;
+  background-color: #3f3d56;
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+.button:hover {
+  filter: brightness(120%);
+}
+.button__outlie {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.2rem;
+  margin-top: 0.5rem;
+  background-color: transparent;
+  border: 3px solid #3f3d56;
+  border-radius: 1rem;
+  color: #000;
+  cursor: pointer;
+}
+.button__outlie:hover {
+  border: 3px dashed #3f3d56;
+}
+.myForm > form > div > p {
+  margin: auto 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+

@@ -1,0 +1,40 @@
+
+      <div class="login-page">
+        <div class="form">
+          <div class="login">
+            <div class="login-header">
+              <h3><b>LOGIN</b></h3>
+              <h3><b>Doctor/Patient Login</b></h3>
+            </div>
+          </div>
+          <form class="login-form">
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+              <div>
+              <label for="email"><b>Email</b></label>
+              <br />
+              <input  type="email"  name="email"  id="email" formControlName="email" required
+              />
+            </div>
+            <div>
+              <label for="password"><b>Password</b></label>
+              <br />
+              <input   type="password" name="password"  id="password" minlength="8" formControlName="password" required
+              /></div>
+            <!--input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/-->
+            <button class="button" type="submit" [disabled]="!loginForm.valid">
+              Sign in
+            </button>
+            <p *ngIf="error" class="text-center error">{{ error }}</p>
+            <p class="message">Not registered? <a [routerLink]="['/register', type]">Create an account</a></p>
+            </form>
+          </form>
+        </div>
+      </div>
+  
+  
+        
+       
+        
+       
+    

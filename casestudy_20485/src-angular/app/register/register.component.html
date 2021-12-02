@@ -1,0 +1,63 @@
+
+   
+    <div class="testbox">
+        <h1><b>Registration Form</b></h1>
+            
+      <div class="accounttype">
+        <form [formGroup]="regForm" (ngSubmit)="onRegister()">
+          <div>
+            <label id="registerr" for="name"><i class="registerr-page "></i><h3><b>Name</b></h3></label>
+            <br />
+            <input
+              class="registerr-page"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="what can we call you?"
+              formControlName="name"
+              required
+            />
+          </div>
+          <br><br><br>
+          <div>
+            <label id="registerr" for="name"><i class="registerr-page "></i><h3><b>Email</b></h3></label>
+            <br />
+            <input
+              class="registerr-page"
+              type="email"
+              name="name"
+              id="name"
+              placeholder="what's your mail-id?"
+              formControlName="email"
+              required
+            />
+          </div>
+          <br><br><br>
+          <div>
+            <label id="registerr" for="password"><i class="registerr-page "></i><h3><b>Password</b></h3></label>
+            <br />
+            <input
+              class="registerr-page"
+              type="password"
+              name="name"
+              id="name"
+              minlength="8"
+              placeholder="think for a tough password but easy to remember!"
+              formControlName="password"
+              required
+            />
+            
+          </div>
+          <br>
+         
+          <br><br>
+          <div>
+            <button type="submit" class="button" [disabled]="!regForm.valid" >
+              Sign up
+            </button>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+  

@@ -1,0 +1,35 @@
+<h1>Doctor Post Data</h1>
+
+<form  #patForm="ngForm" (ngSubmit)="patFormData(patForm.value)">
+
+        <input type="number" name = "patID" ngModel placeholder="Enter Pat id">
+
+        <br><br>
+
+        <input type="text"  name = "name" ngModel placeholder="Enter Pname">
+
+        <br><br>
+        <input type="text" name = "age" ngModel placeholder="Enter age">
+
+        <br><br>
+
+        <input type="text"  name = "sex" ngModel placeholder="Enter you gender">
+
+        <br><br>
+        <input type="email" name = "eMail" ngModel placeholder="Enter eMail">
+
+        <br><br>
+
+        <input type="number"  name = "phoneNumber" ngModel placeholder="Enter Contact">
+
+        <br><br>
+
+        <input type="text"  name = "bloodGroup" ngModel placeholder="Enter your blood group">
+
+
+        
+        <br><br>
+ <button> Update Data</button>
+
+    </form>
+

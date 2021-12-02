@@ -1,0 +1,73 @@
+<!--h1> Doctors</h1>
+
+<ul *ngFor = "let doctorprofile of doctorprofile">
+
+    <li>{{doctorprofile.drID}}</li>
+
+       <li> {{doctorprofile.drName}}</li> 
+    
+      
+       <li>{{doctorprofile.specialization}}</li> 
+    
+</u-->
+<br><br>
+
+<td><button class ="btn" [routerLink]="['/update']"><b>Update Profile</b></button></td>
+<br><br>
+<body style ="background-color: aqua;">
+<div class="col-md-6" align="center">
+  <table class="table table-striped">
+  <thead>
+  <tr>
+    <th>DId</th>
+    <th>DocName</th>
+    <th>Specialization</th>
+    <br>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let doctorprofile of doctorprofile;let idx=index">
+          <td>{{doctorprofile.drID}}</td>
+          <td>{{doctorprofile.drName}}</td>
+          <td>{{doctorprofile.specialization}}</td>
+          <td><button class ="btn" [routerLink]="['/feed']"><b>Feedback</b></button></td>
+          <td>
+            <input type="radio" name="radiogroup" 
+            [checked]="idx === 0" 
+            [value]="doctorprofile.drID">
+        </td>
+          
+          </tr>
+  </tbody>
+    </table>
+
+  </div>
+<br><br>
+  <h1>Appointment</h1>
+
+  <form  #doctorprofileForm="ngForm" (ngSubmit)="doctorprofileFormData(doctorprofileForm.value)">
+  
+         
+          <input type="number" name = "drID" ngModel placeholder="Enter Doc id">
+  
+          <br><br>
+          
+          <input type="number" name = "patID" ngModel placeholder="Enter Pat id">
+  
+          <br><br>
+          <input type="date" name = "date" ngModel placeholder="Enter age">
+  
+          <br><br>
+  
+          <input type="time"  name = "startTime" ngModel placeholder="Stime">
+  
+          <br><br>
+          <input type="time" name = "endTime" ngModel placeholder="Etime">
+  
+          <br><br>
+  
+          
+   <button> Book Slot</button>
+  
+      </form>
+  
